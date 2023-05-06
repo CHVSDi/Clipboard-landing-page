@@ -33,7 +33,7 @@ body p {
 }
 
 header {
-    background-image: url("../images/bg-header-desktop.png");
+    background-image: url("bg-header-desktop.png");
 }
 
 header span {
@@ -179,7 +179,7 @@ footer .icons .row {
     }
 
     header {
-        background-image: url("../images/bg-header-mobile.png");
+        background-image: url("bg-header-mobile.png");
         background-size: cover;
     }
 
