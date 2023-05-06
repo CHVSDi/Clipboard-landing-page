@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Golos+Text:wght@600&display=swap');
+
+:root {
+    /* PRIMARY COLORS */
+    --strong-cyan: rgb(38, 186, 164);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /* ACTIVE COLORS */
+    --active-cyan: rgb(80, 231, 208);
+    --active-blue: hsl(233, 100%, 79%);
+
+    /* NEUTRAL COLORS */
+    --dark-greyish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(202, 11%, 66%);
+}
+
+body {
+    font-size: 18px;
+    font-family: "Bai Jamjuree", sans-serif;
+    overflow-x: hidden;
+}
+
+body span,
+body h1,
+body h2,
+body h3 {
+    color: var(--dark-greyish-blue);
+    font-weight: 600;
+}
+
+body p {
+    color: var(--grayish-blue);
+}
+
+header {
+    background-image: url("../images/bg-header-desktop.png");
+}
+
+header span {
+    font-size: 40px;
+}
+
+.btn {
+    border: solid;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 190px;
+    height: 38px;
+    color: #fff;
+}
+
+.dwnLMOS {
+    background-color: var(--light-blue);
+    box-shadow: 5px 11px 29px -18px var(--light-blue);
+    transition: 0.5s ease-in;
+}
+
+.dwnLMOS:hover {
+    background-color: var(--active-blue);
+    font-weight: 600;
+    color: #fff;
+}
+
+.dwnLiOs {
+    background-color: var(--strong-cyan);
+    box-shadow: 50px 62px 49px -45px rgba(38,186,164,1);
+    transition: 0.5s ease-in;
+}
+
+.dwnLiOs:hover {
+    background-color: var(--active-cyan);
+    font-weight: 600;
+    color: #fff;
+}
+
+.r2 img {
+    max-width: 95%;
+}
+
+.r2 .card {
+    border: none;
+}
+
+header,
+.r0,
+.r1,
+.r3,
+.r8,
+.r5,
+.r4,
+.r9 {
+    text-align: center;
+}
+
+.r4 h2 {
+    margin-bottom: 25px;
+}
+
+.r4 img {
+    position: relative;
+    right: 25%;
+}
+
+.r1,
+.r2,
+.r3,
+.r4,
+.r5,
+.r6,
+.r7 {
+   padding-top: 25px;
+   padding-bottom: 25px; 
+}
+
+.r6 .card  {
+    border: none;
+    text-align: center;
+    max-width: 90%;
+}
+
+.r6 .card p {
+    line-height: 35px;
+}
+
+.r7 img {
+    width: 190px;
+    margin-left: 60px;
+}
+
+footer img {
+    max-width: 25%;
+}
+
+footer .list {
+    position: relative;
+    left: 10%;
+}
+
+footer .list .option {
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+footer .list .option:hover {
+    color: var(--strong-cyan);
+}
+
+footer .icons{
+    position: absolute;
+    left: 85%;
+}
+
+footer .icons .icon i {
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+footer .icons .icon i:hover {
+    color: var(--strong-cyan);
+}
+
+footer .icons .row {
+    max-width: 50%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        background-image: url("../images/bg-header-mobile.png");
+        background-size: cover;
+    }
+
+    header img {
+        max-width: 18%;
+    }
+
+    .r2 {
+        text-align: center;
+    }
+
+    .r7 h2,
+    .r6 h3,
+    .r5 h2,
+    .r4 h2,
+    .r3 h2
+    .r2 h2,
+    .r1 h2,
+    header span {
+        font-size: 20px;
+    }
+
+    .r7 p,
+    .r6 p,
+    .r5 p,
+    .r4 p,
+    .r3 p,
+    .r2 p,
+    .r1 p,
+    header p {
+        font-size: 15px;
+    }
+
+    .r4 {
+        text-align: center;
+    }
+
+    .r4 img {
+        max-width: 90%;
+        position: relative;
+        left: 5%;
+    }
+
+    .r4 h2 {
+        margin-bottom: 10px;
+    }
+
+    .r2 img {
+        max-width: 90%;
+    }
+
+    .r6 .card {
+        max-width: 100%;
+    }
+
+
+    .r7 img {
+        max-width: 47%;
+        margin-bottom: 50px;
+        position: relative;
+        right: 10%;
+    }
+
+    footer{
+        max-width: 150%;
+        background-color: #f3efef;
+    }
+
+    footer img {
+        position: relative;
+        left: 36%;
+        margin-bottom: 15px;
+    }
+
+    footer .list {
+        width: 86%;
+        text-align: center;
+        position: relative;
+        left: 6%;
+    }
+
+    footer .list h5 {
+        margin-bottom: 15px;
+    }
+
+    footer .icons {
+        display: none;
+    }
+}
